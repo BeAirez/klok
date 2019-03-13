@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+#txt{
+	font-size: 80px;
+	font-family: Open Sans light;
+	margin-bottom: 20px;
+
+}
+
+#day{
+	font-size: 30px;
+	font-family: 'Press Start 2P', cursive;
+}
+#logo{
+    width: 80%;
+	font-family: Open Sans;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/*Typmachine animatie*/
+.line {
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      overflow: hidden;transform: translateY(-50%);
+}
+
+.anim-typewriter {
+      animation: typewriter 2s steps(9) 1s 1 normal both,
+      blinkTextCursor 500ms steps(9) infinite normal;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 9em;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: grey;
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+
+
+/*Media Queries*/
+@media only screen and (min-width: 600px){
+	#logo{
+		max-width: 600px;
+		margin-top: 60px;
+	}
+	#txt{
+		font-size: 100px;
+	}
+	#day{
+		font-size: 40px;
+}
+
+@media only screen and (min-width: 900px){
+	#logo{
+		max-width: 600px;
+		margin-top: 120px;
+	}
+	#txt{
+		font-size: 140px;
+	}
+	#day{
+		font-size: 56px;
+}
+
+@media only screen and (min-width: 1366px) {
+	#logo{
+		max-width: 800px;
+		margin-top: 240px;
+	}
+	#txt{
+		font-size: 182px;
+	}
+	#day{
+		font-size: 72px;
+}

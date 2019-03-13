@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="javascript/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SpaceX Klok</title>
+	</head>
+	<body onload="startTime(), dag()">
+		<div class="box">
+			<img id="logo" src="images/spacex.png" alt="Spacex">
+			<div id="txt"></div>
+			<p id="day" class="line anim-typewriter"></p>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+		<script>
+			TweenMax.from('#txt', 2, {opacity:0});
+			TweenMax.from('#logo', 0.5, {scale:.5, opacity: 0, delay:3.2, ease:Back.easeOut.config(2)});
+		</script>
+	</body>	
+</html>
