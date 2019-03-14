@@ -5,7 +5,6 @@
 	font-size: 80px;
 	font-family: Open Sans light;
 	margin-bottom: 20px;
-
 }
 
 #day{
@@ -32,7 +31,7 @@
       overflow: hidden;transform: translateY(-50%);
 }
 
-.anim-typewriter {
+.typewriter {
       animation: typewriter 2s steps(9) 1s 1 normal both,
       blinkTextCursor 500ms steps(9) infinite normal;
 }
