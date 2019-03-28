@@ -6,8 +6,7 @@ function startTijd() {
 	var seconde = vandaag.getSeconds();
 	minuut 		= checkTijd(minuut);
 	seconde 	= checkTijd(seconde);
-	document.getElementById('txt').innerHTML =
-	uur + ":" + minuut + ":" + seconde;
+	document.getElementById('txt').innerHTML = uur + ":" + minuut + ":" + seconde;
 	var t = setTimeout(startTijd, 1000);
 }
 //Deze functie voegt een 0 toe aan de klok wanneer het nummer lager dan 10 is.
@@ -17,18 +16,15 @@ function checkTijd(i) {
 }
 
 //De dag van de week
+var tijd = new Date();
 function weekDag() {
-	var dag = new Date();
 	var dagNaam = ['Sunday...', 'Monday...', 'Tuesday..', 'Wednesday', 'Thursday.', 'Friday...', 'Saturday.'];
-	var dagVanDeWeek = dagNaam[dag.getDay()];
+	var dagVanDeWeek = dagNaam[tijd.getDay()];
 	document.getElementById("day").innerHTML = dagVanDeWeek;
 }
 
 //Veranderd de achtergrond kleur op basis van tijd.
-var now = new Date();
-var tijd = now.getHours();
-
-if (tijd > 8 && tijd < 18){
+if (tijd.getHours() > 8 && tijd.getHours() < 18){
 	document.body.style.backgroundColor = "rgba(245, 245, 240 ,1 )";
 	document.body.style.color = "black";
 }
